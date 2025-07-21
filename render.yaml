@@ -4,7 +4,7 @@ services:
     env: python
     plan: free
     buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn ChazeFashion.wsgi:application
+    startCommand: gunicorn ChazeFashion
     envVars:
       - key: DJANGO_SETTINGS_MODULE
         value: ChazeFashion.settings
